@@ -1,0 +1,322 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,100&display=swap");
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Lato" sans-serif;
+	box-sizing: border-box;
+	justify-content: center;
+}
+
+.navbar {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: honeydew;
+	/* background: transparent; */
+	width: 100%;
+	height: 70px;
+	z-index: 1;
+}
+
+.nav {
+	display: flex;
+	justify-content: right;
+	list-style: none;
+	margin-right: 15%;
+}
+
+.Logo {
+	flex: 1 1 auto;
+	margin-left: 10%;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 700;
+	font-size: 1.1em;
+}
+
+a {
+	margin: 15px;
+	color: rgb(19, 19, 19);
+	font-weight: 500;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+a:hover {
+	color: rgb(252, 49, 49);
+}
+
+.home-area {
+	position: relative;
+	background-image: url(../Images/pic1.webp);
+	width: 100%;
+	height: 90vh;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.schedule-area {
+	grid-template-columns: 1fr 1fr;
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+	width: 100%;
+	height: 700px;
+}
+
+.text-part {
+	margin-top: 35px;
+	position: relative;
+	padding: 70px 40px;
+	border-radius: 20px;
+	background-color: #eec0c6;
+	background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+.text-part h1 {
+	color: #111;
+	margin-bottom: 45px;
+	line-height: 1em;
+	font-weight: 500;
+	font-family: "Lato" sans-serif;
+	padding-left: 10px;
+	border-left: 5px solid brown;
+}
+
+.card-text h3 {
+	color: rgb(247, 39, 39);
+	margin-bottom: 45px;
+	line-height: 1em;
+	font-weight: 500;
+	font-family: "Lato" sans-serif;
+	padding-left: 10px;
+	border-left: 5px solid fuchsia;
+}
+
+.text-part .inputBox {
+	position: relative;
+	width: 300px;
+	height: 46px;
+	margin-bottom: 35px;
+}
+
+.card-text .inputBox {
+	position: relative;
+	width: 300px;
+	height: 46px;
+	margin-bottom: 35px;
+}
+
+.text-part .inputBox:last-child {
+	margin-bottom: 0;
+}
+
+.card-text .inputBox:last-child {
+	margin-bottom: 0;
+}
+
+.text-part .inputBox input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border: 1px solid #111;
+	background: transparent;
+	padding: 10px;
+	border-radius: 4px;
+	box-sizing: border-box;
+	outline: none;
+	font-size: 16px;
+	color: #111;
+	font-weight: 300;
+}
+
+.card-text .inputBox input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border: 1px solid #111;
+	background: transparent;
+	padding: 10px;
+	border-radius: 4px;
+	box-sizing: border-box;
+	outline: none;
+	font-size: 16px;
+	color: #111;
+	font-weight: 300;
+}
+
+.text-part .inputBox span {
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	padding: 10px;
+	display: inline-block;
+	font-size: 16px;
+	color: #111;
+	font-weight: 300;
+	transition: 0.5s;
+	pointer-events: none;
+}
+
+.card-text .inputBox span {
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	padding: 10px;
+	display: inline-block;
+	font-size: 16px;
+	color: #111;
+	font-weight: 300;
+	transition: 0.5s;
+	pointer-events: none;
+}
+
+/* .text-part .inputBox input:valid ~ span  */
+.text-part .inputBox input:focus ~ span,
+.text-part .inputBox input:valid ~ span {
+	transform: translateX(-10px) translateY(-32px);
+	font-size: 20px;
+}
+
+.card-text .inputBox input:focus ~ span,
+.card-text .inputBox input:valid ~ span {
+	transform: translateX(-10px) translateY(-32px);
+	font-size: 20px;
+}
+
+.text-part .inputBox input[type="submit"] {
+	background: gold;
+	color: #111;
+	border: none;
+	max-width: 120px;
+	cursor: pointer;
+	font-weight: 500;
+}
+
+.card-text .inputBox input[type="submit"] {
+	background: fuchsia;
+	color: #111;
+	border: none;
+	max-width: 120px;
+	cursor: pointer;
+	font-weight: 500;
+}
+
+.card-text .delete input[type="submit"] {
+	background: rgb(235, 14, 14);
+	color: #111;
+	border: none;
+	max-width: 120px;
+	cursor: pointer;
+	font-weight: 500;
+}
+
+.text-part .inputBox input[type="submit"]:hover {
+	background: springgreen;
+}
+
+.card-text .inputBox input[type="submit"]:hover {
+	background: peachpuff;
+}
+
+.card-text .delete input[type="submit"]:hover {
+	background: rgb(77, 208, 77);
+}
+
+/* h1 {
+	font-size: 25px;
+	font-family: "Lato" sans-serif;
+	margin-bottom: 25px;
+} */
+
+p {
+	font-size: 18px;
+	line-height: 50px;
+}
+
+.schedule-area {
+	/* background:#65CCB8 ; */
+	background: #ffffff;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* Card Section */
+
+.card {
+	display: grid;
+	grid-template-columns: 300px;
+	grid-template-rows: 210px 210px 80px;
+	grid-template-areas: "image" "text" "status";
+	width: 400px;
+	display: inline-block;
+	margin-right: 15px;
+	font-family: "Lato", sans-serif;
+	border-radius: 18px;
+	background-color: white;
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+	text-align: center;
+	transition: 0.5s ease;
+	cursor: pointer;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+span {
+	color: rgb(187, 20, 20);
+}
+
+.card-image {
+	grid-area: image;
+	background-image: url(../Images/pic2.jpg);
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	background-size: cover;
+	height: 35vh;
+}
+
+.card-text {
+	grid-area: text;
+	margin: 25px;
+}
+
+.card-text .comment {
+	color: rgb(255, 7, 110) font-size 13px;
+}
+
+.card:hover {
+	transform: scale(1.2);
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+footer {
+	font-family: "Roboto" sans-serif;
+	background: #111;
+	padding: 20px 23px;
+	color: #fff;
+	width: 100%;
+}
+
+footer span a {
+	color: rgb(20, 190, 220);
+	text-decoration: none;
+}
+
+footer span a:hover {
+	text-decoration: underline;
+}
